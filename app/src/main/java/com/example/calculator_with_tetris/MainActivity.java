@@ -2,6 +2,7 @@ package com.example.calculator_with_tetris;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +19,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         Button button = findViewById(R.id.GetAnsw);
         button.setOnClickListener(this);
+        Button button1 = findViewById(R.id.Sinonyms);
+        button1.setOnClickListener(this);
     }
 
     //функция для ввода сс полученого числа
@@ -171,7 +174,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        SS();
+        Intent intent;
+        switch(v.getId()) {
+            case R.id.GetAnsw:
+                SS();
+                break;
+            case R.id.Sinonyms:
+                intent = new Intent("com.example.calculator_with_tetris.antonyms");
+                startActivity(intent);
+                break;
+        }
     }
 
 }

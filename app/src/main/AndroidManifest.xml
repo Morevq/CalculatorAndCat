@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Calculator_with_tetris">
         <activity
+            android:name=".Antonyms"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.calculator_with_tetris.antonyms" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -19,5 +28,5 @@
             </intent-filter>
         </activity>
     </application>
-
+    <uses-permission android:name="android.permission.INTERNET"/>
 </manifest>

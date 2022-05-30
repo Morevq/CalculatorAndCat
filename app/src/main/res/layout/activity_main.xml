@@ -188,4 +188,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/goodcat" />
 
+    <Button
+        android:id="@+id/Sinonyms"
+        android:layout_width="0dp"
+        android:layout_height="26dp"
+        android:backgroundTint="#DECCFF"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
